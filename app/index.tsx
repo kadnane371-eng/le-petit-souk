@@ -1,3 +1,4 @@
+import {Link} from "expo-router"
 import {
   View,
   Image,
@@ -10,6 +11,7 @@ export default  function Index() {
 
   return (
     <>
+    
     <View style={{ flex:1, backgroundColor: "#FBF5E4",}}>
        <ScrollView>
          <View style={{  flex:1, }} >
@@ -33,14 +35,14 @@ export default  function Index() {
        <Text style={{fontSize:15,marginTop:10,lineHeight:20,color:"#000000",}}>passion et des ingrédients frais. </Text>
 
     </View>
-
+     <Link href="/menu" asChild>
       <TouchableOpacity style={{alignItems:"center",marginTop:50,}}>
         <View style={{backgroundColor:"#2D6A4F",paddingVertical:15,paddingHorizontal:40,borderRadius:20,width:348,height:60,alignItems:"center",}}>
       <Text style={{ color:"#FFFFFF",fontSize:20,fontWeight:"bold"}}>VOIR LE MENU</Text>
         </View>
 
      </TouchableOpacity> 
-
+</Link>
 </ScrollView>
 
     </View>
